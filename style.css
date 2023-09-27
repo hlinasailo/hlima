@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif ;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/background.gif);
+    background-position:center ;
+    background-size: cover;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 90px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a {
+    text-decoration: none;
+    color:#fff ;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    
+}
+.navbar ul li:hover::after
+{
+    width: 100%;
+    
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+
+}
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+}
+
+body{
+    background: #0b2020;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+}
+
+
+
+.logo{
+width: 100px;
+margin-bottom: 30px;
+}
+
+.about h1{
+    padding: 15px 0;
+}
+
+
+
+.about{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    transform: none;
+    text-align: center;
+    color: #fff;
+    
+}
+.Contact{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    transform: none;
+    text-align: center;
+    color: #fff;
+}
+.Service{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    transform: translatey(-50%);
+    text-align: center;
+    color: #fff;
+}
+.Blog{
+    width: 100%;
+    position: relative;
+    top: 15%;
+    transform: none;
+    text-align: center;
+    color: #fff;
+    justify-content: space-between;
+    display: block;
+}
+.Helpline{
+    width: 100%;
+    position: relative;
+    top: 15%;
+    transform: none;
+    text-align: center;
+    color: #fff;
+    justify-content: space-between;
+    display: block;
+
+    
+    
+}
+
+
+
+
+.banService{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/Service.jpg);
+    background-position:center ;
+    background-size: cover;
+}
+.banBlog{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/Blog.jpg);
+    background-position:center ;
+    background-size: cover;
+}
+.banAbout{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/About.jpg);
+    background-position:center ;
+    background-size: cover;
+}
+
+.banHelpline{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/Helpline.jpg);
+    
+    background-position:center ;
+    background-size: cover;
+}
+
+.banContact{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/contact.jpg);
+    background-position:center ;
+    background-size: cover;
+}
+.social-iconf:hover{
+    color: #0866ff;
+
+}
+.social-icont:hover{
+    color:#00acee;
+}
+.social-iconi:hover{
+    color:#7fbb30;
+}
+
+.social-iconf{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.social-icont{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.social-iconi{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.Helpline strong{
+    font-size: 40px;
+}
+
+
+.Helpline .hiv{
+    width: 99%;
+    margin-bottom: 100px;
+     margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(90,0,0,0.75),rgba(0,0,0,.45)),url(img/hiv.jpg);
+    background-position:right;
+    background-size: 100%;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   outline-color: #009688 ;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 250px;
+
+}
+
+.Helpline p
+{
+    margin-bottom: 40px;
+}
+    
+.Helpline h1{
+    padding-top: 3px;
+    
+}
+.Helpline .women{
+    width: 99%;
+    margin-bottom:100px ;
+    margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(2, 2, 1, 0.75),rgba(0,0,0,.45)),url(img/women.png);
+   
+    background-position:right;
+    background-size: 100%;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   outline-color: #0866ff;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 250px;
+}
+
+.Helpline .child{
+    width: 99%;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(2, 2, 1, 0.75),rgba(0,0,0,.45)),url(img/women.png);
+    background-position:right;
+    background-size: 50%;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   outline-color: #009688 ;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 250px;
+}
+.Helpline .Medical{
+    
+    margin-bottom: 50px;
+    margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(2, 2, 1, 0.75),rgba(0,0,0,.45)),url(img/medicine.jpg);
+    background-position:right;
+    background-size: 100%;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   outline-color: #009688 ;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 250px;
+   width: 100%;
+   
+   
+}
+.Helpline .child{
+    width: 99%;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(2, 2, 1, 0.75),rgba(0,0,0,.45)),url(img/child.jpg);
+    background-position:right;
+    background-size: 100%;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   outline-color: #381805 ;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 250px;
+}
+.Helpline .healthcare{
+    width: 99%;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(2, 2, 1, 0.75),rgba(0,0,0,.45)),url(img/healthcare.jpg);
+    background-position:right;
+    background-size: 100%;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   outline-color: #381805 ;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 250px;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+
+ /*footer new........*/
+ footer {
+    background-color: #0f0f11;
+    margin-top: auto;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+.white-text{
+    color: white;
+}
+.aboutpic{
+border-radius: 25px;
+outline-color: #009688;
+outline-style: inset;
+outline-width: 10px;
+display: right;
+margin-left: 50px;
+transform: none;
+margin-bottom: 30px;
+margin-top: 30px;
+height: 400px;
+}
+.thu{
+    justify-content: center;
+    display: inline-block;
+    width: 700px;
+    font-size: 40px;
+    text-align: center;
+    
+    
+}
+.facebook{
+    margin-right: 30px;
+}
+.twitter{
+    margin-right: 30px;
+}
+/*blog*/
+.Helpline p
+{
+    margin-bottom: 40px;
+}
+    
+.Helpline h1{
+    padding-top: 3px;
+    
+}
+.Blog .zu{
+    width: 99%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(2, 2, 1, 0.75),rgba(0,0,0,.45)),url(img/zu.gif);
+    background-position:right;
+    background-size: 100%;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   outline-color: #0866ff;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 350px;
+}
+
+.Blog .khuva{
+    width: 99%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(2, 2, 1, 0.75),rgba(0,0,0,.45)),url(img/khuva.gif);
+    background-position:right;
+    background-size: 50%;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   outline-color: #009688 ;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 350px;
+}
+.Blog .mirrage{
+    
+    margin: 3px;
+    margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(2, 2, 1, 0.75),rgba(0,0,0,.45)),url(img/mirrage.gif);
+    background-position:right;
+    background-size: 100%;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   outline-color: #009688 ;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 350px;
+   width: 100%;
+   margin-bottom: 20px;
+   
+   
+}
+
+.Blog .smoke{
+    width: 99%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(2, 2, 1, 0.75),rgba(0,0,0,.45)),url(img/meizial.gif);
+    background-position:right;
+    background-size: 100%;
+   color: rgb(255, 255, 255);
+   border-radius: 25px;
+   outline-color: #381805 ;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 400px;
+}
+.Blog .sex{
+    width: 99%;
+     margin-top: 40px;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(90,0,0,0.75),rgba(0,0,0,.45)),url(img/sex.gif);
+    background-position:right;
+    background-size: 100%;
+   color: rgb(254, 255, 253);
+   border-radius: 25px;
+   outline-color: #009688 ;
+   outline-style: inset;
+   outline-width: 20px;
+   height: 400px;
+margin-bottom: 80px;
+}
+.Blog h3{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.Blog h2{
+    font-size: 50px;
+}
+.small-containerblog{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    text-align: center;
+
+}
